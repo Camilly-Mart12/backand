@@ -1,0 +1,76 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1764769685260
+  modified: 1764769685260
+  description: ""
+collection:
+  - name: locadora
+    meta:
+      id: fld_8dd1c1fa9ee04a89816cf6ea7bcf1a8f
+      created: 1777595130540
+      modified: 1777595130540
+      sortKey: -1777595130540
+      description: ""
+    children:
+      - url: localhost:3000/test/tables
+        name: Teste conexão
+        meta:
+          id: req_048b5cca717f440a8eb13836f7c2722d
+          created: 1777595156535
+          modified: 1778800579802
+          isPrivate: false
+          description: ""
+          sortKey: -1777595156535
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:3000/test/tables
+        name: Lista tabelas
+        meta:
+          id: req_c8000d16b48b43f2833761c5badd2fd1
+          created: 1778202332616
+          modified: 1778202347344
+          isPrivate: false
+          description: ""
+          sortKey: -1777595156485
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.1.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778799140257
+    modified: 1778799140257
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778799140253
+    modified: 1778799140253
+    isPrivate: false
