@@ -5,23 +5,21 @@
 exports.up = function(knex) {
   return knex.schema.createTable("locacoes", (table) => {
     table.increments("id").primary()
-    table.string("titulo").notNullable()
 
-    //relações
-    table.integer("genero_id")
-    .unsigned()
-    .references("id")
-    .inTable("generos")
-
-     table.integer("diretores_id")
-    .unsigned()
-    .references("id")
-    .inTable("filmes")
+    table.integer("cliente_id")
+        .unsigned()
+        .references("id")
+        .inTable("clientes")
+        
+    table.integer("filme_id")
+        .unsigned()
+        .references("id")
+        .inTable("filmes")
 
     table.date("alugado_em").notNullable()
-     table.date("devolvido_em")
+    table.date("devolvido_em")
 
-    table.timestamp(true,true)
+    table.timestamps(true, true)
   })
 };
 

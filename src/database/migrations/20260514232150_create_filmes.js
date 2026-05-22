@@ -7,19 +7,17 @@ exports.up = function(knex) {
     table.increments("id").primary()
     table.string("titulo").notNullable()
 
-    //relações
     table.integer("genero_id")
-    .unsigned()
-    .references("id")
-    .inTable("generos")
+        .unsigned()
+        .references("id")
+        .inTable("generos")
+        
+    table.integer("diretor_id")
+        .unsigned()
+        .references("id")
+        .inTable("diretores")
 
-     table.integer("diretores_id")
-    .unsigned()
-    .references("id")
-    .inTable("diretores")
-    
-    table.timestamp(true,true)
-
+    table.timestamps(true, true)
   })
 };
 
